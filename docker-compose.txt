@@ -8,6 +8,6 @@ version: '2'
      environment:
        - ALLOW_EMPTY_PASSWORD=yes
        - MARIADB_USER=kullaniciadi
-       - MARIADB_PASSWORD=sifre
+       - MARIADB_PASSWORD=30119036
      networks:
        - mariadb-network
