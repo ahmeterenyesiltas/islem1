@@ -1,0 +1,13 @@
+version: '2'
+ networks:
+   app-tier:
+     driver: bridge
+ services:
+   mariadb:
+     image: 'bitnami/mariadb:latest'
+     environment:
+       - ALLOW_EMPTY_PASSWORD=yes
+       - MARIADB_USER=kullaniciadi
+       - MARIADB_PASSWORD=sifre
+     networks:
+       - mariadb-network
